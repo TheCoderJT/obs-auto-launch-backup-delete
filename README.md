@@ -16,9 +16,7 @@ I'm not held liable for your misuse of this script in anyway or if you enter inc
 # Getting Started!
 
 1. Download the AHK script only copy and paste it inside your obs folder.
-   
 2. Once its inside the obs folder right click the autohotkey script and create shortcut.....drag the shortcut to the desktop. Then, Right click the script on the desktop and click edit you can use notepad or any IDE.
-   
 3. Now, you will need to change some values;
 
 ## Enter Your Backup Obs Folder Path You Used In create-backup.bat (backupDir)
@@ -27,8 +25,7 @@ You need to change the below path value to the folder path you used inside of nu
 
 <code>
 obsSavedBackupPath := "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps"
-</code>  
-
+</code>
 
 ## Enter Your Obs Binary Folder Path (Only Need To Change If You Are Using 32Bit and If Your Obs Install Is Different)
 
@@ -55,7 +52,6 @@ numberOfFilesBeforeDeletion := 2
 If your using the 32bit client you will need to change **obs64.exe** to **obs32.exe**. If your using the 64 bit client you won't need to change this value.
 
 <code>
-;Make sure to change the obs64.exe to w.e binary you guys are running it either obs32.exe or obs64.exe
 Run, *RunAs obs64.exe, %obsPath% 
 </code>
 
