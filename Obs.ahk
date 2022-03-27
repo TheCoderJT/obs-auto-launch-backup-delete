@@ -49,7 +49,6 @@ Loop Files, %obsSavedBackupPath%\*.zip,,
 if(count > numberOfFilesBeforeDeletion){
   FileDelete, %oldestFile%
 }
-;endregion
 ;---------------
 
 
