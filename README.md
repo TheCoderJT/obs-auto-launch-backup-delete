@@ -1,7 +1,7 @@
 Hello, so if you all don't know me I go by TheCoderJT when it comes to coding. But, most people know me by TheNamesJT I do youtube in my off time and stream to twitch. I have been a fan of nutty for awhile now
 and recently saw his video [Backup ALL Your OBS Settings - Never Lose Your Settings Again!](https://youtu.be/imPH4YzBaZg)
 
-It is a solid video! and many are happy with what he showed but, for me. I like having more control. So, I created a autohotkey script for windows users only that will run obs as admin, check how many backup zips we have inside our backup path we setup follow nutty's video, and if its higher then a value we set it will delete the oldest file and run nutty's create-backup.bat file which does a bunch of things you should already know.
+It is a solid video! and many are happy with what he showed but, for me. I like having more control. So, I created a autohotkey script for windows users only that will run obs as admin, check how many backup zips we have inside our backup folder, and if the number of saved backupss is higher then a value we set it will delete the oldest file and run nutty's create-backup.bat file which does a bunch of things you should already know like creating a new backup among other things.
 
 Its hella convient and it saves you from having to go into the obs folder and running nutty's bat files manually which you still can do if you still desire to do that.
 
