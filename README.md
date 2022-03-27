@@ -16,12 +16,14 @@ I'm not held liable for your misuse of this script in anyway or if you enter inc
 # Getting Started!
 
 1. Download the AHK script only copy and paste it inside your obs folder.
+   
 2. Once its inside the obs folder right click the autohotkey script and create shortcut.....drag the shortcut to the desktop. Then, Right click the script on the desktop and click edit you can use notepad or any IDE.
+   
 3. Now, you will need to change some values;
 
 ## Enter Your Backup Obs Folder Path You Used In create-backup.bat (backupDir)
 
-You need to change the below path valueto the folder path you used inside of nutty's create-backup.bat file to see this just right click create-backup.bat and edit that file and copy the backupDir value and use that path for the value below only copy and paste the text inside the double qoutes like belofe but with your path
+You need to change the below path value to the folder path you used inside of nutty's create-backup.bat file to see this just right click create-backup.bat and edit that file and copy the backupDir value and use that path for the value below only copy and paste the text inside the double qoutes like belofe but with your path
 
 <code>
 obsSavedBackupPath := "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps"
