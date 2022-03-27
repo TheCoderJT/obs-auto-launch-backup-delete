@@ -3,27 +3,38 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; Step 1: Have this script file in the obs-studio folder name the autohotkey script Obs create shortcut and move it to desktop. So you run this like you would of with the obs shortcut this replaces that. 
 
-; The Main Folder The Obs Backup Zip Files this is the same path as inside the create-backup.bat file. 
+; You need to change the below path value to the folder path you used inside of nutty's create-backup.bat file to see this just right click create-backup.bat and edit that file and copy the backupDir value and use that path for the value below only copy and paste the text inside the double qoutes like belofe but with your path
+
 obsSavedBackupPath := "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps"
 
-; The obs exe location w.e one you use use 32bit if you run 32bit obs
+;-------------
+
+;Now change the obsPath value to your obs exe folder it will either be exactly like mine if your using the 64 bit obs client and if you didn't change the install location when installing obs. If that is the case you won't need to edit this value.
+
 obsPath := "C:\Program Files\obs-studio\bin\64bit"
 
-; Think of this as a min number of backups in the logic below once count is higher then this number the logic will delete the oldest file. Example: its set to 3 at default so once you have 4 backups it will delete the oldest one so you will only have 3 backups if you set this to like 5 once you create a 6th backup it will delete the oldest one and you will have 5 backups.
+;-------------
+
+
+
+; This value can be any value you want but, remember this will increase the file size of the backupfolder and it will make your google drive take up more space if you have this folder synced to google drive using the google drive desktop app. I woudn't set it higher then 11 which means you will always have 10 recent backups.
+
 numberOfFilesBeforeDeletion := 2
 
-; Don't modify these below
+;--------------
+
+; DON'T CHANGE THESE
 count := 0
 old := ""
-;-----
+;-------------
 
-; This runs obs as admin if your getting an error here you may have to google a solution for your use case.
-Run, *RunAs obs64.exe, %obsPath% ; Make sure to change the obs64.exe to w.e binary you guys are running it either obs32.exe or obs64.exe
+; If your using the 32bit client you will need to change obs64.exe to obs32.exe. If your using the 64 bit client you won't need to change this value.
+Run, *RunAs obs64.exe, %obsPath% 
+;--------------
 
 
-; This loops through all backup zips and deletes the oldest one so 
+; DON'T CHANGE THESE
 Loop Files, %obsSavedBackupPath%\*.zip,,
 {
   count++
@@ -32,11 +43,17 @@ Loop Files, %obsSavedBackupPath%\*.zip,,
     oldestFile := A_LoopFileFullPath, old := A_LoopFileTimeCreated
   }
 }
+;--------------
 
-; If the number of backup zip files exceed the numberOfFilesBeforeDeletion then it will delete the oldest file and then creates another backup screen by running nutty's bat file 
+; DON'T CHANGE THESE
 if(count > numberOfFilesBeforeDeletion){
   FileDelete, %oldestFile%
 }
+;endregion
+;---------------
 
-;This runs nutty's create-backup.bat file which creates the zipped obs backup
+
+; Make sure the path to nutty's create-backup.bat file is correct aka find it in your obs-studio folder and in the explorer window right click and copy the path as text and enter that in between the double qoutes. It had to be the right path or this won't run at all.
+
 Run, C:\Program Files\obs-studio\create-backup.bat
+;--------------

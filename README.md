@@ -31,10 +31,6 @@ obsSavedBackupPath := "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Times
 
 Now change the obsPath value to your obs exe folder it will either be exactly like mine if your using the 64 bit obs client and if you didn't change the install location when installing obs. If that is the case you won't need to edit this value.
 
-If your using the 32 bit client you will need to change it to "C:\Program Files\obs-studio\bin\32bit".
-
-If you installed it into a different location you will need to locate your 32bit or 64bit path and then change it according.
-
 <code>
 obsPath := "C:\Program Files\obs-studio\bin\64bit"
 </code>
