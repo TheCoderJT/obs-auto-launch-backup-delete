@@ -15,9 +15,9 @@ I'm not held liable for your misuse of this script in anyway or if you enter inc
 
 # Getting Started!
 
-1. **Download the AHK script** and **put it inside your obs folder**. I would **name it Obs** since we plan on replacing the actual obs shortcut with it and running obs by running this autohotkey script.
-2. Right click the script and click edit either in notepad or in any IDE you use....I used vscode but, notepad will work.
-3. You will need to change some values.
+1. Download the AHK script only copy and paste it inside your obs folder.
+2. Once its inside the obs folder right click the autohotkey script and create shortcut.....drag the shortcut to the desktop. Then, Right click the script on the desktop and click edit you can use notepad or any IDE.
+3. Now, you will need to change some values;
    1. obsSavedBackupPath you need to change this to the folder path you used inside of nutty's create-backup.bat file to see this just right click and edit that file and copy the backupDir value (don't cut or remove it just copy it) the value is the text surounded by double quoutes.
    2. Once you copied that go back to the notepad where your editing the authotkey script and replace "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps" with the one you just copied. make sure that yours looks like mine above in terms of the path being surrounded by doubl qoutes "path".
    3. Now change the obsPath value to your obs exe folder it will either be exactly like mine if your using the 64 bit obs client and if you didn't change the install location when installing obs if that is the case you won't need to edit this value. If your using the 32 bit client you will need to change it to "C:\Program Files\obs-studio\bin\32bit". If you installed it into a different location you will need to location the 32bit or 64but path and then change it according.
