@@ -18,12 +18,52 @@ I'm not held liable for your misuse of this script in anyway or if you enter inc
 1. Download the AHK script only copy and paste it inside your obs folder.
 2. Once its inside the obs folder right click the autohotkey script and create shortcut.....drag the shortcut to the desktop. Then, Right click the script on the desktop and click edit you can use notepad or any IDE.
 3. Now, you will need to change some values;
-   1. obsSavedBackupPath you need to change this to the folder path you used inside of nutty's create-backup.bat file to see this just right click and edit that file and copy the backupDir value (don't cut or remove it just copy it) the value is the text surounded by double quoutes.
-   2. Once you copied that go back to the notepad where your editing the authotkey script and replace "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps" with the one you just copied. make sure that yours looks like mine above in terms of the path being surrounded by doubl qoutes "path".
-   3. Now change the obsPath value to your obs exe folder it will either be exactly like mine if your using the 64 bit obs client and if you didn't change the install location when installing obs if that is the case you won't need to edit this value. If your using the 32 bit client you will need to change it to "C:\Program Files\obs-studio\bin\32bit". If you installed it into a different location you will need to location the 32bit or 64but path and then change it according.
-   4. numberOfFilesBeforeDeletion this value can be any value you want but, remember this will increase the file size of the backupfolder and it will make your google drive take up more space if you have this folder synced to google drive using the google drive desktop app. I woudn't set it higher then 11 which means you will always have 10 recent backups.
-   5. If your using the 32bit client you will need to change **obs64.exe** which is location <code>Run, \*RunAs obs64.exe, %obsPath% ; Make sure to change the obs64.exe </code> you would need to change it to **obs32.exe**. If your using the 64 bit client you won't need to change this value.
-   6. At the end of the script you will see <code> Run, C:\Program Files\obs-studio\create-backup.bat</code> make sure the path for the create-backup.bat file is correct or this won't run at all. This should not be wrapped in double qoutes!.
+
+## Enter Your Backup Obs Folder Path You Used In create-backup.bat (backupDir)
+
+You need to change the below path valueto the folder path you used inside of nutty's create-backup.bat file to see this just right click create-backup.bat and edit that file and copy the backupDir value and use that path for the value below only copy and paste the text inside the double qoutes like belofe but with your path
+
+<code>
+obsSavedBackupPath := "F:\Obs-Studio Backup\Portable Obs Backup\Obs Backup Timestamps"
+</code>  
+
+
+## Enter Your Obs Binary Folder Path (Only Need To Change If You Are Using 32Bit and If Your Obs Install Is Different)
+
+Now change the obsPath value to your obs exe folder it will either be exactly like mine if your using the 64 bit obs client and if you didn't change the install location when installing obs. If that is the case you won't need to edit this value.
+
+If your using the 32 bit client you will need to change it to "C:\Program Files\obs-studio\bin\32bit".
+
+If you installed it into a different location you will need to locate your 32bit or 64bit path and then change it according.
+
+<code>
+obsPath := "C:\Program Files\obs-studio\bin\64bit"
+</code>
+
+## Set The Number Of Files Before Deletion
+
+This value can be any value you want but, remember this will increase the file size of the backupfolder and it will make your google drive take up more space if you have this folder synced to google drive using the google drive desktop app. I woudn't set it higher then 11 which means you will always have 10 recent backups.
+
+<code>
+numberOfFilesBeforeDeletion := 2
+</code>
+
+## Set Which Obs Exe To Run
+
+If your using the 32bit client you will need to change **obs64.exe** to **obs32.exe**. If your using the 64 bit client you won't need to change this value.
+
+<code>
+;Make sure to change the obs64.exe to w.e binary you guys are running it either obs32.exe or obs64.exe
+Run, *RunAs obs64.exe, %obsPath% 
+</code>
+
+## The Path To Nutty's Create-Backup.bat File
+
+Make sure the path to nutty's create-backup.bat file is correct aka find it in your obs-studio folder and in the explorer window right click and copy the path as text and enter that in between the double qoutes. It had to be the right path or this won't run at all.
+
+<code> Run, C:\Program Files\obs-studio\create-backup.bat</code>
+
+# Congrats!
 
 And thats it! you can simply double click the ahk shortcut it should be on the desktop. you will notice cmd or powershell open and then obs starts. Make sure not to close cmd or powershell untill its finished creating the backup this is nutty's script running.
 
