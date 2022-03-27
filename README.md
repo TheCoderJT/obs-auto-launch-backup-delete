@@ -70,6 +70,8 @@ You only need this if your really worried. The google drive desktop app lets you
 
 This is mainly why limiting the amount of backups is a good thing because if you don't your space will get used up pretty quickly so limiting it will make it so you don't have to buy space and you can still stay below 15gb.
 
-If your interested in this its pretty straight forward [Install Google Desktop App](https://www.google.com/intl/en_ca/drive/download/) and once installed all you do is signin with your google account and go navagate to My Computer and add the backups folder and checkmark Sync With Google Drive and it will
+If your interested in this its pretty straight forward [Install Google Desktop App](https://www.google.com/intl/en_ca/drive/download/) and once installed all you do is run desktop google drive and it will ask you to signin with your google account and then inside the google desktop app which can be accessed by going to your toolbar or running apps useally in the bottom right and right click it it will open the ui click the settings cog wheel and then select My Computer and click Add Folder add your folder to where your backup zips files are being automatically saved to. Then, make sure you checkmark Sync with google drive. What this will do is;
 
 > Upload all files and folders, including photos and videos. If you edit or remove files, those changes will be automatically synced.
+
+The only downside people may not like i this had to be running in the background and will use system resources so its up to you if you want to use this. Like state above this is opitonal.
