@@ -60,6 +60,11 @@ Make sure the path to nutty's create-backup.bat file is correct aka find it in y
 
 # Congrats!
 
-And thats it! you can simply double click the ahk shortcut it should be on the desktop. you will notice cmd or powershell open and then obs starts. Make sure not to close cmd or powershell untill its finished creating the backup this is nutty's script running.
+Thats it! 
 
-It also may even close on its own it just takes longer to finish which means your obs it open and be loaded by the time the cmd finishes. So don't be alarmed! or panic thinking something is wrong. If you followed my instructions and entered your CORRECT PATHS this should work as potrayed.
+Now whenever you want to record or go live just run that script and it will open obs as admin, delete the oldest backup and create a new backup so you will always be backing up your obs. 
+
+### Bonus: Google Drive Desktop App
+
+You only need this if your really worried. The google drive desktop app lets you sync a folder to google drive so it will constantly be syncing your backups to google drive. This is mainly why limiting the amount of backups is a good thing because if you don't your save will get used up pretty quickly so limiting it will make it so you don't have to buy space and you can still stay below 15gb. If your interested in this its pretty straight forward [Install Google Desktop App](https://www.google.com/intl/en_ca/drive/download/) and once installed all you do is signin with your google account and go navagate to My Computer and add the backups folder and checkmark Sync With Google Drive and it will 
+> Upload all files and folders, including photos and videos. If you edit or remove files, those changes will be automatically synced.
