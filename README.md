@@ -79,4 +79,4 @@ You will see a settings cog wheel in the top right of the app window click it an
 ### Sync With Google Drive
 > Upload all files and folders, including photos and videos. If you edit or remove files, those changes will be automatically synced.
 
-The only downside people may not like i this had to be running in the background and will use system resources so its up to you if you want to use this. Like state above this is opitonal.
+The only downside people may not like is the fact that google drive desktop app has to be running in the background and will use system resources so its up to you if you want to use this. Like state above this is opitonal.
