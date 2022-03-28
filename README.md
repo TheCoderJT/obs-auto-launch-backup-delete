@@ -80,3 +80,5 @@ You will see a settings cog wheel in the top right of the app window click it an
 > Upload all files and folders, including photos and videos. If you edit or remove files, those changes will be automatically synced.
 
 The only downside people may not like is the fact that google drive desktop app has to be running in the background and will use system resources so its up to you if you want to use this. Like state above this is opitonal.
+
+The other downside is you will still need to go onto google drive via the browser and delete google drive recycle bin if your space starts to reach 15gb. I sadly couldn't automate this using AHK.
