@@ -18,7 +18,7 @@ I'm not held liable for your misuse of this script in anyway or if you enter inc
 1. Firstly if you don't have ahk installed best [Install AHK](https://www.autohotkey.com/)
 2. Then, Download the AHK script from github paste it inside your obs folder.
 3. Once its inside the obs folder right click the autohotkey script and create shortcut.....drag the shortcut to the desktop. Then, Right click the script on the desktop and click edit you can use notepad or any IDE.
-4. Now, you will need to change some values inside the script
+4. Now, you will need to change some values inside the script - <span style="color:red">Make Sure To Save The File Once Your Done Making Changes</span>
 
 ## Enter Your Backup Obs Folder Path You Used In create-backup.bat (backupDir)
 
@@ -72,11 +72,12 @@ This is mainly why limiting the amount of backups is a good thing because if you
 
 If your interested in this its pretty straight forward [Install Google Desktop App](https://www.google.com/intl/en_ca/drive/download/) and once installed all you do is run google drive and it will ask you to signin with your google account.
 
-Then open the google desktop app it should either open automatically if it doesn't it will be running in the bottom right toolbar on windows. If it doesn't auto open then all you need to do is right click the app icons in the bottom right app tray. 
+Then open the google desktop app it should either open automatically if it doesn't it will be running in the bottom right toolbar on windows. If it doesn't auto open then all you need to do is right click the app icons in the bottom right app tray.
 
 You will see a settings cog wheel in the top right of the app window click it and click preferences then click My Computer then click add folder and select the backup folder it will then ask you to check some opitions you want to checkmark Sync with Google Drive like below.
 
 ### Sync With Google Drive
+
 > Upload all files and folders, including photos and videos. If you edit or remove files, those changes will be automatically synced.
 
 The only downside people may not like is the fact that google drive desktop app has to be running in the background and will use system resources so its up to you if you want to use this. Like state above this is opitonal.
